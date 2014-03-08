@@ -26,6 +26,9 @@
                 in this section are copied from /site/ in the package -->
         <files folder="site">
                 <filename>index.html</filename>
+                <filename>list.php</filename>
+                <filename>add.php</filename>
+                <filename>update.php</filename>
                 <filename>todolist.php</filename>
         </files>
  
