@@ -60,7 +60,7 @@ if(isset($_POST["n"])==true)
     $con = mysql_connect("localhost", "root");
     mysql_select_db("todo",$con);
 
-    $sql = "insert into todo values('', '', ".$_POST["n"]."', '".$_POST["year"]."/".$_POST["month"]."/".$_POST["day"]."')";
+    $sql = "insert into todo values('', '', '".$_POST["n"]."', '".$_POST["year"]."/".$_POST["month"]."/".$_POST["day"]."')";
     echo $sql;
     mysql_query($sql,$con);
 }
