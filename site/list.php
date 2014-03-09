@@ -45,6 +45,7 @@
             	}
 
         	}
+        	echo "<td><input type=button value=Delete onclick=window.location.assign('delete.php?id=".mysql_result($result, $i, 0)."')>";
         	echo "</tr>";
     	}
     	echo "</table>";
