@@ -30,6 +30,7 @@
                 <filename>add.php</filename>
                 <filename>update.php</filename>
                 <filename>todolist.php</filename>
+                <filename>delete.php</filename>
         </files>
  
         <administration>
