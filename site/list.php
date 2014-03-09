@@ -22,6 +22,7 @@
  	else
  	{
  		echo "<table>";
+        echo "<tr><th></th><th>Task:</th><th>Due:</th>";
  		for($i=0; $i<mysql_num_rows($result); $i++)
     	{
        		echo "<tr>";
