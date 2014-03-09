@@ -9,6 +9,23 @@
 <?php
 
     $con = mysql_connect("localhost", "root");
+    
+    $db_selected = mysql_select_db('todo', $con);
+
+    if (!$db_selected)
+    {
+        $sql = 'CREATE DATABASE todo';
+
+        if (mysql_query($sql, $con))
+        {
+            
+        }
+        else
+        {
+          echo 'Error creating database: ' . mysql_error() . "\n";
+        }
+    }      
+
     mysql_select_db("todo",$con);
 
     $sql = "CREATE TABLE IF NOT EXISTS `todo` (
