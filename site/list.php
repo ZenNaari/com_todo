@@ -11,6 +11,15 @@
     $con = mysql_connect("localhost", "root");
     mysql_select_db("todo",$con);
 
+    $sql = "CREATE TABLE IF NOT EXISTS `todo` (
+   id int NOT NULL auto_increment,
+   status bool NOT NULL,
+   name varchar(255),
+   date date,
+   PRIMARY KEY  (id)
+   )";
+    mysql_query($sql,$con);
+
     $sql = "select * from todo";
     $result = mysql_query($sql,$con);
 
